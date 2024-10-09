@@ -174,3 +174,36 @@ docker image ls
 docker run -it <image_name>:<tag>
 ```
 
+
+
+## push a Docker image to Docker Hub, you'll follow a few steps. Here's a step-by-step guide:
+
+ - Step 1: Create a Docker Hub Account
+If you haven't already, create an account on Docker Hub.
+
+ - Step 2: Log in to Docker Hub from the CLI
+Log in to your Docker Hub account from the command line:
+
+```bash
+docker login
+```
+You'll be prompted to enter your Docker Hub username and password.
+
+ - Step 3: Tag Your Docker Image
+You need to tag the image with your Docker Hub repository name. The format for tagging an image is:
+
+```bash
+docker tag <local_image>:<tag> <dockerhub_username>/<repository_name>:<tag>
+```
+# Example:
+If your local image is my-react-app:1.0 and your Docker Hub username is asutoshsidhya, tag the image as follows:
+
+```bash
+docker tag my-react-app:1.0 asutoshsidhya/my-react-app:1.0
+```
+ - Step 4: Push the Docker Image to Docker Hub
+Now push the tagged image to your Docker Hub repository:
+
+```bash
+docker push <dockerhub_username>/<repository_name>:<tag>
+```
