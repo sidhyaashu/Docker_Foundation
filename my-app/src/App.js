@@ -7,7 +7,7 @@ function App() {
       {/* Hero Section */}
       <header className="hero-section">
         <nav className="navbar">
-          <h1 className="logo">YourBrand</h1>
+          <h1 className="logo">Asutosh sidhya</h1>
           <ul className="nav-links">
             <li><a href="#features">Features</a></li>
             <li><a href="#testimonials">Testimonials</a></li>

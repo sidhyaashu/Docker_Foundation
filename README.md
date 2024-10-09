@@ -146,3 +146,31 @@ docker run -p exposed_port:current_port <image_id>
 ```bash
 docker run -d -p exposed_port:current_port <image_name>:<tag>
 ```
+
+# To remove after stop container
+```bash
+docker run -d --rm -p exposed_port:current_port <image_name>:<tag>
+```
+# To assigne name any time
+```bash
+docker run -d --rm --name "give_name" -p exposed_port:current_port <image_name>:<tag>
+```
+
+# Before remove any container at first stop the container:
+```bash
+docker ps
+docker stop <container_ID_or_name>
+docker rm <container_ID_or_name>
+```
+
+# To use any pre-define image from docker hub:
+```bash
+docker pull <image_name>:<tag>
+docker image ls
+```
+
+# To use intractive mode:
+```bash
+docker run -it <image_name>:<tag>
+```
+
