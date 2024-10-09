@@ -87,7 +87,7 @@ It allows you to deploy and scale containerized applications seamlessly across a
 # Create a react base project with vite
 
 ```bash
-npm create vite@latest <app_name>
+npx create-react-app <app_name>
 ```
 # Create Docker file like Dockerfile
 
